@@ -1,33 +1,42 @@
-.project-card{
+.project-card {
     flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 16px 0px;
-    padding: 8px 0px;
+    margin: 16px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    transition: .5s all;
 }
-.project-photo{
+
+.project-card:hover {
+    box-shadow: 5px 5px #ccc;
+    transition: .5s all;
+}
+
+.project-photo {
     width: 40%;
 }
 
-.project-info{
+.project-info {
     margin-right: 24px;
+    width: 500px;
 }
 
-.project-title{
+.project-title {
     font-size: 20px;
     font-weight: 600;
 }
 
-.project-tags{
+.project-tags {
     display: flex;
     max-width: 60%;
     flex-wrap: wrap;
 }
 
 .tag {
-    padding:  4px 8px;
-    background-color: blue;
+    padding: 4px 8px;
+    background-color: #ccc;
     border-radius: 4px;
     margin-right: 6px;
     margin-bottom: 4px;
@@ -38,40 +47,80 @@
     color: black;
 }
 
-.project-links{
+.project-links {
     margin-top: 6px;
     display: flex;
+}
+
+.projectDescription {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .link-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: #ccc;
     width: max-content;
     padding: 4px 8px;
     border-radius: 4px;
     font-size: 16px;
     margin-right: 6px;
+    transition: .5s all;
 }
 
-.link-button i {
-    display: flex;
-    align-items: center;
-    mask-repeat: 4px;
+.link-button:hover {
+    background-color: aquamarine;
+    transition: .5s all;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .project-photo {
+        width: 80%;
+    }
+
+    .project-card {
+        flex-direction: column-reverse;
+    }
+
+    .project-info {
+        margin-left: 0px;
+        margin-top: 12px;
+        width: 70%;
+        font-size: 80%;
+    }
+
+    .projectDescription {
+        font-size: 18px;
+    }
+
+    .project-tags {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 720px) {
     .project-photo {
         width: 70%;
     }
+
     .project-card {
         flex-direction: column-reverse;
     }
+
     .project-info {
         margin-left: 0px;
         margin-top: 12px;
+        width: 70%;
+        font-size: 80%;
     }
+
+    .projectDescription {
+        font-size: 16px;
+    }
+
     .project-tags {
         max-width: 100%;
     }

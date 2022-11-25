@@ -1,4 +1,6 @@
-.body{
+.theme-body {
     padding: 12px;
     padding-bottom: 36px;
+    font-family: 'Montesserat', sans-serif;
+    justify-content: center;
 }

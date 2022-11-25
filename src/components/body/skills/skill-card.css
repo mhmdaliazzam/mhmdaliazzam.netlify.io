@@ -1,13 +1,15 @@
 .skill-card{
     width: max-content;
     padding: 8px 16px;
-    height: 120px;
+    height: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 6px;
     border-radius: 8px;
+    border: 1px solid #aaa;
+    background-color: #ccc;
 }
 
 .skill-icon {
@@ -16,6 +18,7 @@
 
 .skill-name{
     font-size: 18px;
+
 }
 
 @media only screen and (max-width: 1024px) {

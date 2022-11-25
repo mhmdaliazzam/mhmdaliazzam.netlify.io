@@ -1,5 +1,6 @@
 import React from "react";
 import "./project-card.css";
+
 function ProjectCard({ project }) {
   return (
     <div className="project-card">
@@ -12,18 +13,18 @@ function ProjectCard({ project }) {
                 <i class="fi-rr-globe"></i>Demo
               </div>
             </a>
-            )}
-            {project.github&& (
-              <a className="project-link" href={project.github}>
-                <div className="link-button">
+          )}
+          {project.github && (
+            <a className="project-link" href={project.github}>
+              <div className="link-button">
                 <i class="devicon-github-original colored"></i>Github
               </div>
             </a>
-            )}
+          )}
         </div>
-        <p>{project.about}</p>
+        <p className="projectDescription">{project.about}</p>
         <div className="project-tags">
-          {project.tags.map((tag)=> {
+          {project.tags.map((tag) => {
             return <label className="tag">{tag}</label>;
           })}
         </div>

@@ -6,17 +6,18 @@ import Footer from "../footer/index";
 
 
 function Home() {
-  return ( <div className="home">
-    <div>
+  return (
+    <div className="theme-home">
+      <div>
         <Header />
-    </div>
-    <div>
+      </div>
+      <div>
         <Body />
-    </div>
-    <div>
+      </div>
+      <div>
         <Footer />
+      </div>
     </div>
-  </div>
   );
 }
 
