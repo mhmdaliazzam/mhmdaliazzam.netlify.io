@@ -1,5 +1,5 @@
 .mobile {
-    background-color: white;
+    background-color: #ccc;
     height: 100vh;
     width: 60vw;
     position: absolute;
@@ -31,10 +31,12 @@
     font-size: 24px;
     margin: 12px 0px;
     display: flex;
+    padding: 12px;
 }
 
-.mobile-option a{
+.mobile-option a {
     text-decoration: none;
-    color: blue;
+    color: #000;
     display: flex;
+    transition: .3s all;
 }

@@ -5,18 +5,7 @@
     padding: 12px;
     position: relative;
     align-items: center;
-    background-color: #ccc;
-}
-
-.menu {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-}
-
-.menu-icon {
-    font-size: 24px;
-    color: aqua;
+    background-color: #000;
 }
 
 .mobile-menu {
@@ -31,9 +20,14 @@
 .logo {
     display: flex;
     font-size: 36px;
-    color: blue;
+    color: #fff;
     font-weight: 800;
     margin: 0 40px;
+}
+
+.menu-temp {
+    color: #ccc;
+    font-size: 24px;
 }
 
 @media only screen and (max-width: 720px) {

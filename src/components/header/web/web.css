@@ -13,9 +13,15 @@
 
 .web-option a {
     text-decoration: none;
-    color: blue;
+    color: #ccc;
     display: flex;
     align-items: center;
+    transition: .3s all;
+}
+
+.web-option a:hover {
+    color: #fff;
+    transition: .3s alls;
 }
 
 .option-icon {

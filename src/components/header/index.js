@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./header.css";
 import Mobile from "./mobile";
 import Web from "./web/index";
-
+import { BiMenu } from "react-icons/bi";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ function Header() {
         </div>
         <div className="mobile-menu">
           <div onClick={() => setIsOpen(!isOpen)}>
-            <i class="fi-rr-apps menu-icon"></i>
+            <BiMenu className="menu-temp" />
           </div>
           {isOpen && <Mobile isOpen={isOpen} setIsOpen={setIsOpen} />}
         </div>

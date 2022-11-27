@@ -7,11 +7,12 @@
     align-items: center;
     flex-direction: row-reverse;
     border: 1px solid #ccc;
+    border-radius: 4px;
     transition: .5s all;
 }
 
 .work-card:hover {
-    box-shadow: 5px 5px #ccc;
+    box-shadow: 5px 5px 10px #ccc;
     transition: .5s all;
 }
 
@@ -40,7 +41,10 @@
     max-width: 80%;
 }
 
-
+.company-name {
+    font-size: 20px;
+    font-weight: 600;
+}
 
 @media only screen and (max-width: 720px) {
     .work-card {
